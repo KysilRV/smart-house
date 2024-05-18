@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
     blocks.forEach((block, i) => offsets[i] = block.offsetTop + block.clientHeight + 60);
 
     headerLinks.forEach((link, i) => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function(e) {
             window.scrollTo({
                 top: offsets[i],
                 behavior: 'smooth'
@@ -41,4 +41,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
         });
     });
+
+    if (document.querySelectorAll('.realize__info')) {
+        const realizeInfo = document.querySelectorAll('.realize__info');
+
+        for (let i = 0; i < realizeInfo.length; i++) {
+            if (i % 2 == 0) {
+                realizeInfo[i].style.background = '#1341B1';
+            }
+        }
+    }
 });
