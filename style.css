@@ -183,6 +183,11 @@ body {
     transition: .5s;
 } 
 
+.info__text span {
+    font-family: 'Roboto Bold';
+    font-size: 19px;
+}
+
 .realize {
     margin-top: 60px;
 }
