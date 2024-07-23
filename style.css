@@ -141,26 +141,42 @@ body {
     height: unset;
 }
 
+.realize__img {
+    width: 250px;
+    height: 300px;
+}
+
+.info__hide {
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    transition: .5s;
+}
+
 .info__info:nth-child(1) {
     background: #333333;
 }
 
 .info__text {
-    display: none;
     font-family: 'Roboto Regular';
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 28px;
     color: #fff;
     transition: .5s;
+    text-align: justify;
+    letter-spacing: 2px;
 }
 
 .info__descr {
     display: block;
     font-family: 'Roboto Regular';
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 22px;
+    line-height: 26px;
     color: #fff;
     transition: .5s;
+    text-align: justify;
+    letter-spacing: 2px;
 }
 
 .info__item, .info__link {
@@ -169,7 +185,7 @@ body {
     align-items: center;
     gap: 10px;
     font-family: 'Roboto Regular';
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
     cursor: pointer;
     text-decoration: none;

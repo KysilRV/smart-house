@@ -18,11 +18,11 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     const moreBtns = document.querySelectorAll('.info__item');
-    const allTexts = document.querySelectorAll('.info__text');
+    const allTexts = document.querySelectorAll('.info__hide');
 
     moreBtns.forEach((btn, i) => {
         btn.addEventListener('click', () => {
-            if (allTexts[i].style.display === 'block') {
+            if (allTexts[i].style.display === 'flex') {
                 allTexts[i].classList.add('hide');
                 chevrons[i].style.transform = 'rotate(0deg)';
                 setTimeout(() => allTexts[i].style.display = 'none', 450);
@@ -31,10 +31,10 @@ window.addEventListener('DOMContentLoaded', () => {
                     text.classList.add('hide');
                     text.style.display = 'none';
                     chevrons.forEach(chev => chev.style.transform = 'rotate(0deg)')
-                    allTexts[i].style.display = 'block';
+                    allTexts[i].style.display = 'flex';
                 });
     
-                allTexts[i].style.display = 'block';
+                allTexts[i].style.display = 'flex';
                 chevrons[i].style.transform = 'rotate(-180deg)';
                 setTimeout(() => allTexts[i].classList.remove('hide'), 50);
             }
