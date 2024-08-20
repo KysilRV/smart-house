@@ -222,6 +222,10 @@ body {
     align-content: inherit;
 }
 
+.img {
+    width: 350px;
+}
+
 .canva__wrapper {
     margin-top: 40px;
     display: flex;
